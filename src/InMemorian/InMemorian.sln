@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InMemorian.CSharp", "InMemorian.CSharp.csproj", "{74AE4716-250F-82DD-720B-553727F1545D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InMemorian.CSharp.Editor", "InMemorian.CSharp.Editor.csproj", "{49957298-FAB8-AB37-F1C8-C95F20569CB2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74AE4716-250F-82DD-720B-553727F1545D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74AE4716-250F-82DD-720B-553727F1545D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74AE4716-250F-82DD-720B-553727F1545D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74AE4716-250F-82DD-720B-553727F1545D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49957298-FAB8-AB37-F1C8-C95F20569CB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49957298-FAB8-AB37-F1C8-C95F20569CB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49957298-FAB8-AB37-F1C8-C95F20569CB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49957298-FAB8-AB37-F1C8-C95F20569CB2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
