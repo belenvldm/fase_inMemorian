@@ -31,5 +31,8 @@ public class InputManager : MonoBehaviour {
             traslation = -1;
         else
             traslation = 0;
+
+        if (Input.GetKeyDown(KeyCode.Space))
+            Events.OnCharacterAction();
     }
 }

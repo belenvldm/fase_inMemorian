@@ -11,4 +11,6 @@ public static class Events
 	public static System.Action<string> OnMusic = delegate { };
 
 	public static System.Action InventoryRefresh = delegate { };
+    public static System.Action OnCharacterAction = delegate { };
+    public static System.Action OnCharacterFreeze = delegate { };
 }
