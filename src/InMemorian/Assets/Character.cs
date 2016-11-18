@@ -7,7 +7,7 @@ public class Character : MonoBehaviour {
     private Camera mainCamera;
     public int acceleration;
     public int accelerationRotation;
-
+    private int MAX_DISTANCE;
     public states state;
     public enum states
     {
@@ -28,7 +28,14 @@ public class Character : MonoBehaviour {
     {
         state = states.FREEZE;
     }
-
+    public void SetMaxDistance(int _MAX_DISTANCE)
+    {
+        this.MAX_DISTANCE = _MAX_DISTANCE;
+    }
+    public void Idle()
+    {
+        state = states.ALIVE;
+    }
     void Update()
     {
         RotateView();
@@ -37,6 +44,18 @@ public class Character : MonoBehaviour {
             Traslate();
             RotateBody();
         }
+        Vector3 pos = transform.localPosition;
+        if (pos.x > MAX_DISTANCE)
+            pos.x = MAX_DISTANCE;
+        else if (pos.x < -MAX_DISTANCE)
+            pos.x = -MAX_DISTANCE;
+
+        if (pos.z > MAX_DISTANCE)
+            pos.z = MAX_DISTANCE;
+        else if (pos.z < -MAX_DISTANCE)
+            pos.z = -MAX_DISTANCE;
+
+        transform.localPosition = pos;
     }
     void RotateView()
     {

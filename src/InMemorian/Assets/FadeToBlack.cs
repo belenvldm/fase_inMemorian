@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class FadeToBlack : MonoBehaviour {
@@ -33,7 +32,7 @@ public class FadeToBlack : MonoBehaviour {
 			DoTransition (num);
 			yield return new WaitForEndOfFrame ();
 		}
-		SceneManager.LoadScene (fadeData.newScene);
+        Events.FadeReady();
 		while (num > 0) 
 		{
 			num -= Time.deltaTime;

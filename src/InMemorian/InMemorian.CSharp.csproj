@@ -66,7 +66,6 @@
     <Compile Include="Assets\ActionManager.cs" />
     <Compile Include="Assets\Alacena.cs" />
     <Compile Include="Assets\AutoRotate.cs" />
-    <Compile Include="Assets\CasaFinal.cs" />
     <Compile Include="Assets\Character.cs" />
     <Compile Include="Assets\Data.cs" />
     <Compile Include="Assets\DistanceManager.cs" />
@@ -80,17 +79,10 @@
     <Compile Include="Assets\Item.cs" />
     <Compile Include="Assets\ItemPickUp.cs" />
     <Compile Include="Assets\ItemsManager.cs" />
-    <Compile Include="Assets\MemoriaDos.cs" />
-    <Compile Include="Assets\MemoriaTres.cs" />
-    <Compile Include="Assets\MemoriaUno.cs" />
     <Compile Include="Assets\OnMemory.cs" />
-    <Compile Include="Assets\PbLavadero.cs" />
-    <Compile Include="Assets\PbPp.cs" />
-    <Compile Include="Assets\PlantaBaja.cs" />
+    <Compile Include="Assets\RomRotateByCorners.cs" />
     <Compile Include="Assets\Room.cs" />
     <Compile Include="Assets\RoomManager.cs" />
-    <Compile Include="Assets\Sotano.cs" />
-    <Compile Include="Assets\Splash.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_Teleporter.cs" />
@@ -128,8 +120,7 @@
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Utils.cs" />
     <Compile Include="Assets\TotemsManager.cs" />
     <Compile Include="Assets\Utils.cs" />
-    <Compile Include="Assets\cinematicaCaida.cs" />
-    <Compile Include="Assets\cinematicaIni.cs" />
+    <Compile Include="Assets\WallTrigger.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\SteamVR\Resources\SteamVR_AlphaOut.shader" />
