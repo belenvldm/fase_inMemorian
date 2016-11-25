@@ -8,14 +8,19 @@ public class Room : MonoBehaviour {
     public GameObject[] entrances;
     public GameObject[] dynamicObjects;
 
+	public Transform container;
+
     public int MAX_DISTANCE;
+	public Character character;
 
     void Start()
     {
-        AddInteractableObject(interactableObject);
+		if(interactableObject != null)
+       		AddInteractableObject(interactableObject);
     }
     public void AddCharacter(Character character)
     {
+		this.character = character;
         int rand = Random.Range(0, entrances.Length);
         Vector3 rotation = entrances[rand].transform.localEulerAngles;
         Vector3 position = entrances[rand].transform.localPosition;
@@ -29,12 +34,12 @@ public class Room : MonoBehaviour {
     public void AddInteractableObject(InteractableObject interactableObject)
     {
         int rand = Random.Range(0, dynamicObjects.Length);
-        Vector3 rotation = dynamicObjects[rand].transform.localEulerAngles;
-        Vector3 position = dynamicObjects[rand].transform.localPosition;
+		Vector3 rotation = dynamicObjects[rand].transform.position;
+		Vector3 position = dynamicObjects[rand].transform.position;
 
         InteractableObject iObject =  Instantiate(interactableObject);
 
-        iObject.transform.SetParent(transform);
+		iObject.transform.SetParent(container);
 
         iObject.transform.localPosition = position;
         iObject.transform.localEulerAngles = rotation;

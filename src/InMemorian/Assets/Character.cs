@@ -4,25 +4,33 @@ using System.Collections;
 public class Character : MonoBehaviour {
 
     private InputManager inputManager;
-    private Camera mainCamera;
+    public Camera mainCamera;
     public int acceleration;
     public int accelerationRotation;
-    private int MAX_DISTANCE;
+    public int MAX_DISTANCE;
     public states state;
+	public Animation anim;
     public enum states
     {
         ALIVE,
-        FREEZE
+        FREEZE,
+		AUTOMOVE
     }
 
     void Start () {
         inputManager = Game.Instance.GetComponent<InputManager>();
         mainCamera = GetComponentInChildren<Camera>();
         Events.OnCharacterFreeze += OnCharacterFreeze;
+		Events.OnCharacterAutomove += OnCharacterAutomove;
+		Events.OnCharacterOpenDoor += OnCharacterOpenDoor;
+		Events.OnCharacterDoorReady += OnCharacterDoorReady;
     }
     void Destroy()
     {
         Events.OnCharacterFreeze -= OnCharacterFreeze;
+		Events.OnCharacterAutomove -= OnCharacterAutomove;
+		Events.OnCharacterOpenDoor -= OnCharacterOpenDoor;
+		Events.OnCharacterDoorReady -= OnCharacterDoorReady;
     }
 	void OnCharacterFreeze()
     {
@@ -38,6 +46,9 @@ public class Character : MonoBehaviour {
     }
     void Update()
     {
+		if (state == states.AUTOMOVE)
+			return;
+		
         RotateView();
         if (state == states.ALIVE)
         { 
@@ -75,4 +86,19 @@ public class Character : MonoBehaviour {
             transform.localEulerAngles = new Vector3(0, angles, 0);
         }
     }
+	void OnCharacterAutomove()
+	{
+		OnCharacterFreeze ();
+		print ("AutoWalk");
+		anim.Play("characterAutomove");
+		anim ["characterAutomove"].normalizedTime = 0;
+	}
+	void OnCharacterOpenDoor()
+	{
+		OnCharacterFreeze ();
+	}
+	void OnCharacterDoorReady()
+	{
+		Idle ();
+	}
 }
