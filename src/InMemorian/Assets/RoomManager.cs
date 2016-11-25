@@ -43,8 +43,10 @@ public class RoomManager : MonoBehaviour {
     }
     Room GetRoom()
     {
-		if (roomID > rooms.Length-1)
+		if (roomID > rooms.Length - 1) {
 			roomID = 0;
+			Events.SetShader (ShaderManager.states.TWIRL);
+		}
         return rooms[roomID];       
     }
 }
