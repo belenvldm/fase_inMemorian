@@ -3,8 +3,13 @@ using System.Collections;
 
 public class Alacena : InteractableObject {
 
+	private bool ready = false;
+
     override public void OnSetActive()
     {
+		if (ready)
+			return;
+		ready = true;
         Events.OnCharacterFreeze();
         GetComponent<Animation>().Play("alacenaOn");
         StartCoroutine( Transition() );
