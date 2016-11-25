@@ -11,31 +11,46 @@ ModelImporter:
     100006: pCone3
     100008: pCone4
     100010: pCylinder1
+    100012: pCylinder2
+    100014: transform1
+    100016: transform2
+    100018: transform3
+    100020: transform4
+    100022: transform5
     400000: //RootNode
     400002: pCone1
     400004: pCone2
     400006: pCone3
     400008: pCone4
     400010: pCylinder1
+    400012: pCylinder2
+    400014: transform1
+    400016: transform2
+    400018: transform3
+    400020: transform4
+    400022: transform5
     2300000: pCone1
     2300002: pCone2
     2300004: pCone3
     2300006: pCone4
     2300008: pCylinder1
+    2300010: pCylinder2
     3300000: pCone1
     3300002: pCone2
     3300004: pCone3
     3300006: pCone4
     3300008: pCylinder1
+    3300010: pCylinder2
     4300000: pCylinder1
     4300002: pCone1
     4300004: pCone2
     4300006: pCone3
     4300008: pCone4
+    4300010: pCylinder2
     9500000: //RootNode
   materials:
     importMaterials: 1
-    materialName: 0
+    materialName: 2
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4

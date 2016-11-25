@@ -37,14 +37,17 @@ ModelImporter:
     400028: transform6
     2300000: pTorus3
     2300002: pTorus4
+    2300004: pCylinder2
     3300000: pTorus3
     3300002: pTorus4
+    3300004: pCylinder2
     4300000: pTorus3
     4300002: pTorus4
+    4300004: pCylinder2
     9500000: //RootNode
   materials:
     importMaterials: 1
-    materialName: 0
+    materialName: 2
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4

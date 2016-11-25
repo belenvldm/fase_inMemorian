@@ -8,9 +8,17 @@ ModelImporter:
     100000: pCylinder1
     100002: pPipe1
     100004: //RootNode
+    100006: group1
+    100008: pPipe1 1
+    100010: transform1
+    100012: transform2
     400000: pCylinder1
     400002: pPipe1
     400004: //RootNode
+    400006: group1
+    400008: pPipe1 1
+    400010: transform1
+    400012: transform2
     2300000: pCylinder1
     2300002: pPipe1
     3300000: pCylinder1
@@ -20,7 +28,7 @@ ModelImporter:
     9500000: //RootNode
   materials:
     importMaterials: 1
-    materialName: 0
+    materialName: 2
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4

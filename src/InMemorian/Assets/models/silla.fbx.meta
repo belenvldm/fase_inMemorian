@@ -14,6 +14,19 @@ ModelImporter:
     100012: pCube7
     100014: pCube9
     100016: //RootNode
+    100018: bottom1
+    100020: group2
+    100022: pCube11
+    100024: pCube16
+    100026: pCube17
+    100028: pCube18
+    100030: pCube4 1
+    100032: transform1
+    100034: transform2
+    100036: transform3
+    100038: transform4
+    100040: transform5
+    100042: transform6
     400000: ambientLight1
     400002: group1
     400004: pCube10
@@ -23,6 +36,19 @@ ModelImporter:
     400012: pCube7
     400014: pCube9
     400016: //RootNode
+    400018: bottom1
+    400020: group2
+    400022: pCube11
+    400024: pCube16
+    400026: pCube17
+    400028: pCube18
+    400030: pCube4 1
+    400032: transform1
+    400034: transform2
+    400036: transform3
+    400038: transform4
+    400040: transform5
+    400042: transform6
     2300000: pCube10
     2300002: pCube3
     2300004: pCube4
@@ -44,7 +70,7 @@ ModelImporter:
     9500000: //RootNode
   materials:
     importMaterials: 1
-    materialName: 0
+    materialName: 2
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4

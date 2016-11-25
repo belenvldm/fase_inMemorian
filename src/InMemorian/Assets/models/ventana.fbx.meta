@@ -18,6 +18,20 @@ ModelImporter:
     100020: pCube8
     100022: pPlane1
     100024: //RootNode
+    100026: group1
+    100028: pPlane1 1
+    100030: transform1
+    100032: transform10
+    100034: transform11
+    100036: transform12
+    100038: transform2
+    100040: transform3
+    100042: transform4
+    100044: transform5
+    100046: transform6
+    100048: transform7
+    100050: transform8
+    100052: transform9
     400000: pCube12
     400002: pCube13
     400004: pCube14
@@ -31,6 +45,20 @@ ModelImporter:
     400020: pCube8
     400022: pPlane1
     400024: //RootNode
+    400026: group1
+    400028: pPlane1 1
+    400030: transform1
+    400032: transform10
+    400034: transform11
+    400036: transform12
+    400038: transform2
+    400040: transform3
+    400042: transform4
+    400044: transform5
+    400046: transform6
+    400048: transform7
+    400050: transform8
+    400052: transform9
     2300000: pCube12
     2300002: pCube13
     2300004: pCube14
@@ -70,7 +98,7 @@ ModelImporter:
     9500000: //RootNode
   materials:
     importMaterials: 1
-    materialName: 0
+    materialName: 2
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4

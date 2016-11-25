@@ -17,6 +17,20 @@ ModelImporter:
     100018: pSphere7
     100020: pSphere8
     100022: pSphere9
+    100024: pSphere1
+    100026: pSphere13
+    100028: transform1
+    100030: transform10
+    100032: transform11
+    100034: transform12
+    100036: transform2
+    100038: transform3
+    100040: transform4
+    100042: transform5
+    100044: transform6
+    100046: transform7
+    100048: transform8
+    100050: transform9
     400000: //RootNode
     400002: pSphere10
     400004: pSphere11
@@ -29,6 +43,20 @@ ModelImporter:
     400018: pSphere7
     400020: pSphere8
     400022: pSphere9
+    400024: pSphere1
+    400026: pSphere13
+    400028: transform1
+    400030: transform10
+    400032: transform11
+    400034: transform12
+    400036: transform2
+    400038: transform3
+    400040: transform4
+    400042: transform5
+    400044: transform6
+    400046: transform7
+    400048: transform8
+    400050: transform9
     2300000: //RootNode
     2300002: pSphere10
     2300004: pSphere11
@@ -41,6 +69,7 @@ ModelImporter:
     2300018: pSphere7
     2300020: pSphere8
     2300022: pSphere9
+    2300024: pSphere13
     3300000: //RootNode
     3300002: pSphere10
     3300004: pSphere11
@@ -53,6 +82,7 @@ ModelImporter:
     3300018: pSphere7
     3300020: pSphere8
     3300022: pSphere9
+    3300024: pSphere13
     4300000: pSphere1
     4300002: pSphere2
     4300004: pSphere7
@@ -65,10 +95,11 @@ ModelImporter:
     4300018: pSphere9
     4300020: pSphere6
     4300022: pSphere10
+    4300024: pSphere13
     9500000: //RootNode
   materials:
     importMaterials: 1
-    materialName: 0
+    materialName: 2
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4

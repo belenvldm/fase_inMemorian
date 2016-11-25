@@ -8,22 +8,35 @@ ModelImporter:
     100000: //RootNode
     100002: pTorus4
     100004: pTorus5
+    100006: pCube1
+    100008: pCube2
+    100010: transform1
+    100012: transform2
+    100014: transform3
     400000: //RootNode
     400002: pTorus4
     400004: pTorus5
+    400006: pCube1
+    400008: pCube2
+    400010: transform1
+    400012: transform2
+    400014: transform3
     2300000: //RootNode
     2300002: pTorus4
     2300004: pTorus5
+    2300006: pCube2
     3300000: //RootNode
     3300002: pTorus4
     3300004: pTorus5
+    3300006: pCube2
     4300000: pCube1
     4300002: pTorus5
     4300004: pTorus4
+    4300006: pCube2
     9500000: //RootNode
   materials:
     importMaterials: 1
-    materialName: 0
+    materialName: 2
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4
