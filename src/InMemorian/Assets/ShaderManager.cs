@@ -30,6 +30,7 @@ public class ShaderManager : MonoBehaviour {
 			print ("NONE");
 			camera1.SetActive (true);
 			camera2.SetActive (false);
+			GetComponent<Character> ().mainCamera = camera1.GetComponent<Camera>();
 			break;
 		case states.TWIRL:
 			print ("TWIRL");
