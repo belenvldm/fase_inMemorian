@@ -17,7 +17,11 @@ public class FadeToBlack : MonoBehaviour {
 	void Fade(FadeData fadeData)
 	{
 		this.fadeData = fadeData;
-		StartCoroutine (DoFade ());
+
+        GetComponent<AudioSource>().clip = Resources.Load(fadeData.SoundName) as AudioClip;        
+        GetComponent<AudioSource>().Play();
+
+        StartCoroutine (DoFade ());
 	}
 
 	IEnumerator DoFade()

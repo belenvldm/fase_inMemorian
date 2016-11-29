@@ -16,7 +16,8 @@ public class RoomAutomatic : MonoBehaviour {
 		FadeData fadeData = new FadeData();
 		fadeData.color = Color.black;
 		fadeData.duration = 1;
-		Events.Fade(fadeData);
+        fadeData.SoundName = "1";
+        Events.Fade(fadeData);
 	}
 
 }

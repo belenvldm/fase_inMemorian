@@ -24,7 +24,8 @@ public class Puerta : InteractableObject {
 		FadeData fadeData = new FadeData();
 		fadeData.color = Color.black;
 		fadeData.duration = 1;
-		Events.Fade(fadeData);
+        fadeData.SoundName = "1";
+        Events.Fade(fadeData);
 		yield return new WaitForSeconds(1);
 		OnCharBack ();
 		ready = false;

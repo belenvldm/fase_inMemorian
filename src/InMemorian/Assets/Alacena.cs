@@ -20,6 +20,7 @@ public class Alacena : InteractableObject {
         FadeData fadeData = new FadeData();
         fadeData.color = Color.black;
         fadeData.duration = 1;
+        fadeData.SoundName = "1";
         Events.Fade(fadeData);
     }
 }
